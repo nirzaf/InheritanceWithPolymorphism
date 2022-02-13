@@ -1,4 +1,9 @@
-﻿public class Vehicle
+﻿public interface IVehicle
+{
+    void GearType();
+}
+
+public class Vehicle : IVehicle
 {
     public string Name { get; set; }
     public string Model { get; set; }
@@ -6,6 +11,6 @@
 
     public virtual void GearType()
     {
-        Console.WriteLine("Manual");
+        WriteLine("Manual");
     }
 }

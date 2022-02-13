@@ -1,7 +1,9 @@
-﻿public class Car : Vehicle
+﻿namespace InheritanceWithPolymorphism;
+
+public class Car : Vehicle
 {
     public override void GearType()
     {
-        Console.WriteLine("Automatic");
+        WriteLine("Automatic");
     }
 }
